@@ -70,9 +70,7 @@ main() {
     clear
     printf "\nWelcome to the GTA: San Andreas - Steam to 1.0 downgrader - Linux edition"
     printf "\nThis converts everything in such a way that your new copy will be identical to the 1.0 copy (with a No-CD EXE)."
-    sleep 3
     printf "\nPlease make sure to unpack and run this script in the same directory as your San Andreas installation"
-    printf "\nPlease make sure to set your Wine Prefix in the WINE_PREFIX environment variable"
     printf "\nPress enter to continue"
 
     read -r nothing
