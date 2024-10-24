@@ -1,0 +1,11 @@
+audio/CONFIG/TrakLkup.dat
+audio/streams/BEATS
+audio/streams/CH
+audio/streams/CR
+audio/streams/CUTSCENE
+audio/streams/DS
+audio/streams/MH
+audio/streams/MR
+audio/streams/RE
+audio/streams/RG
+ReadMe/Readme.txt

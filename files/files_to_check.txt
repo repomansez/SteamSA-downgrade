@@ -1,0 +1,13 @@
+528e75d663b8bae072a01351081a2145,audio/CONFIG/TrakLkup.dat
+e26d86c7805d090d8210086876d6c35c,audio/streams/BEATS
+fe31259226e0b4a8a963c70840e1fe8f,audio/streams/CH
+900148b8141ea4c1e782c3a48dbfbf3b,audio/streams/CR
+c25fcaa329b3d48f197ff4ed2a1d2a4d,audio/streams/CUTSCENE
+9b4c18e4f3e82f0fee41e30b2ea2246a,audio/streams/DS
+909e7c4a7a29473e3885a96f987d7221,audio/streams/MH
+a1ec1cbe16dbb9f73022c6f33658abe2,audio/streams/MR
+49b83551c684e17164f2047dcba3e5aa,audio/streams/RE
+7491dc5325854c7117af6e31900f38dd,audio/streams/RG
+4d5f2754d6236d7e8c765def78b0fd68,data/Icons/app.ico
+9369501599574d19ac93de41547c4ec1,gta_sa.exe
+809dcd55ee8b0c77292d65601a04aee6,ReadMe/Readme.txt
