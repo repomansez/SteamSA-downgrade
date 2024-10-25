@@ -4,7 +4,7 @@ A Linux tool to convert the Steam version of GTA: San Andreas back to version 1.
 The speediest downgrader you've ever seen!
 
 ## Dependencies
-- GTA Vice City 
+- GTA San Andreas
 - xdelta3
 
 ## How to use
