@@ -1,7 +1,9 @@
-## SteamSA Downgrade
+## SteamSA Downgrade *WIP*
 A Linux tool to convert the Steam version of GTA: San Andreas back to version 1.0.
 
 The speediest downgrader you've ever seen!
+
+This is still a WORK IN PROGRESS, many features are to be added in the near future, including downgrading to 1.01 instead of 1.0.
 
 ## Disclaimer
 While this tool produces a game that's exactly the same as the original 1.0 copy down to the file hashes, it hasn't been approved for usage on the speedrun.com leaderboards, so I can't endorse using it until I get their go-ahead.
