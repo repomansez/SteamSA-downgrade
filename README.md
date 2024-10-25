@@ -3,6 +3,9 @@ A Linux tool to convert the Steam version of GTA: San Andreas back to version 1.
 
 The speediest downgrader you've ever seen!
 
+## Disclaimer
+While this tool produces a game that's exactly the same as the original 1.0 copy down to the file hashes, it hasn't been approved for usage on the speedrun.com leaderboards, so I can't endorse using it until I get their go-ahead.
+
 ## Dependencies
 - GTA San Andreas
 - xdelta3
