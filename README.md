@@ -13,7 +13,7 @@ While this tool produces a game that's exactly the same as the original 1.0 copy
 - xdelta3
 
 ## How to use
-- Copy the files to your GTA SAN ANDREAS installation directory and run convert.sh.
+- Copy the files to your GTA SAN ANDREAS installation directory and run downgrade.sh.
 
 ## Video tutorial
 - Coming soonTM
