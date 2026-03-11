@@ -72,6 +72,32 @@ patch_files_101() {
 	cp files/gta_sa-1.01.exe gta_sa.exe
 }
 
+test_files_101() {
+	echo "Testing 1.01 files"
+	incorrectFiles=0
+	sleep 2
+	while IFS=',' read -r expectedHash filePath; do
+		expectedHash=$(echo "$expectedHash" | xargs)
+		filePath=$(echo "$filePath" | xargs)
+
+		if [ -e "$filePath" ]; then
+			actualHash=$(md5sum "$filePath" | awk '{print $1}')
+
+			if [ "${expectedHash^^}" != "${actualHash^^}" ]; then
+				echo "Incorrect file: $filePath"
+				incorrectFiles=$((incorrectFiles+1))
+			fi
+		fi
+	done < "files/files_to_check1.01.txt"
+
+	if ! [ $incorrectFiles = 0 ]; then
+		echo "Number of incorrect files: $incorrectFiles"
+		echo "Please verify the integrity of your game on Steam and try again"
+	else
+		echo "Upgrade to 1.01 successful!"
+	fi
+}
+
 main() {
     clear
     printf "\nWelcome to the GTA: San Andreas - Steam to 1.0 downgrader - Linux edition"
@@ -103,4 +129,3 @@ main() {
 }
 
 main
-
