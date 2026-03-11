@@ -22,7 +22,7 @@ patch_files() { # Reads the files from the TXT file and uses xdelta3 to patch th
         mv "$file" "$file.old"
         xdelta3 -d -f -s "$file.old" "files/xdeltafiles/${file}.xdelta" "${file}"
         rm -f "${file}.old"
-    done < files/files_to_patch.txt 
+    done < files/files_to_patch1.0.txt 
 }
 
 delete_files() {
@@ -32,7 +32,7 @@ delete_files() {
         if [ -f "${file}" ]; then
             rm "${file}" 1> /dev/null
         fi
-    done < files/files_to_delete.txt
+    done < files/files_to_delete1.0.txt
 }
 
 copy_exe() {
@@ -56,7 +56,7 @@ test_files() { # Calculates the MD5 hash and compares them to the table, making 
                 incorrectFiles=$((incorrectFiles+1))
             fi
         fi
-    done < "files/files_to_check.txt"
+    done < "files/files_to_check1.0.txt"
 
     if ! [ $incorrectFiles = 0 ]; then
         echo "Number of incorrect files: $incorrectFiles"
@@ -64,6 +64,12 @@ test_files() { # Calculates the MD5 hash and compares them to the table, making 
     else
         echo "Conversion successful!"
     fi
+}
+
+patch_files_101() {
+	cp files/main.scm data/script/main.scm
+	cp files/script.img data/script/script.img
+	cp files/gta_sa-1.01.exe gta_sa.exe
 }
 
 main() {
@@ -80,6 +86,20 @@ main() {
     delete_files
     copy_exe
     test_files
+
+    echo "Successfully downgraded to 1.0, do you wish to upgrade to 1.01? (y/n)"
+    read -r answer
+    case "${answer}" in
+	    y)
+		    patch_files_101
+		    ;;
+	    n)
+		    exit
+		    ;;
+	    *)
+		    echo "fuck you"
+    esac
+		
 }
 
 main
