@@ -118,6 +118,7 @@ main() {
     case "${answer}" in
 	    y)
 		    patch_files_101
+			test_files_101
 		    ;;
 	    n)
 		    exit
