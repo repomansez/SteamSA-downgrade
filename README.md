@@ -8,6 +8,9 @@ There aren't many file differences between versions, I don't get why other downg
 ## Disclaimer
 While this tool produces a game that's exactly the same as the original 1.0/1.01 copy down to the file hashes, it hasn't been approved for usage on the speedrun.com leaderboards, so I can't endorse using it until I get their go-ahead.
 
+
+if you need any proof as to how good this downgrader is, I use it myself, and let me tell you, when someone writes a software they themselves use exclusively, yeah, it's good enough.
+
 ## Dependencies
 - GTA San Andreas
 - xdelta3
